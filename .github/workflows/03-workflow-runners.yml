@@ -12,4 +12,4 @@ jobs:
      
      steps:
       -  run: echo "Runner OS is $RUNNNER_OS"
-      -  shell: bash
+         shell: bash
