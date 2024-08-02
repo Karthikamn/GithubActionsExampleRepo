@@ -7,3 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: echo "Runner OS is $RUNNER_OS" 
+   windows-runner-echo:
+     runs-on: windows-latest
+     steps:
+       - run: echo "Runner OS is $RUNNNER_OS"
