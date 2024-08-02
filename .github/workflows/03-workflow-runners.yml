@@ -10,4 +10,5 @@ jobs:
    windows-runner-echo:
      runs-on: windows-latest
      steps:
+       - shell: bash
        - run: echo "Runner OS is $RUNNNER_OS"
