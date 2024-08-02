@@ -9,7 +9,7 @@ jobs:
       - run: echo "Runner OS is $RUNNER_OS" 
    windows-runner-echo:
      runs-on: windows-latest
-     
      steps:
-      -  run: echo "Runner OS is $RUNNNER_OS"
-         shell: bash
+      - name: Shell 
+        shell: bash
+        run: echo "Runner OS is $RUNNER_OS"
