@@ -1,4 +1,4 @@
-name: 02 - Workflow
+name: Hello
 
 on: 
   push:
