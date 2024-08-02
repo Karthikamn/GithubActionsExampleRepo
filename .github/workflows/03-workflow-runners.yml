@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Show OS
-      - run:  
+      - run:  |
           echo "Runner OS is $RUNNER_OS" 
