@@ -7,5 +7,10 @@ on:
       - syncronised
    branches:
      - master
+jobs:
+ echo:
+  runs-on: ubuntu-latest
+  steps:
+   - run: " run whenever PR is  opened "
      
  
