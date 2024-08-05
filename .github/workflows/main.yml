@@ -1,0 +1,11 @@
+name: 05- 1- Event Filters and activity Types
+
+on:
+ pull_request:
+   types:
+      - opened
+      - syncronised
+   branches:
+     - master
+     
+ 
