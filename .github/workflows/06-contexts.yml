@@ -31,5 +31,5 @@ jobs:
      run:  |
       echo "Variables: ${{vars.MY_VAR}}"
       echo "Env variable is: ${{env.MY_WORKFLOW_VAR}}"
-      echo  "ENV variable is: ${{env.MY_OVERWRITTERN_VAR}}"
+      echo  "ENV variable is: ${{env.MY_OVERWRITTEN_VAR}}"
       
