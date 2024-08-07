@@ -1,3 +1,4 @@
+
 name: 06 - context
 
 run-name:  06-contexts | DEBUG - ${{ inputs.debug }}
@@ -31,6 +32,10 @@ jobs:
       echo "Run Id: ${{github.run_id}}"
       echo "Run number: ${{github.run_number}}"
    - name: Retreieve Variables
+     
+     env:
+        MY_WORKFLOW_VAR: "step"
+        MY_OVERWRITTEN_VAR: "step"
      run:  |
       echo "Variables: ${{vars.MY_VAR}}"
       echo "Env variable is: ${{env.MY_WORKFLOW_VAR}}"
