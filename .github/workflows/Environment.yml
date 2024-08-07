@@ -12,4 +12,4 @@ jobs:
   steps:
    - name: echo vars
      run: |
-      echo "Input is: ${{TARGET_VAR}}"
+      echo "Input is: ${{env.TARGET_VAR}}"
