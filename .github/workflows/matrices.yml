@@ -17,6 +17,9 @@ jobs:
     include:
      - os: ubuntu-latest
        node-version: v16
+    exclude:
+      - os: macos-latest
+        node-version: v12
   steps:
     - uses: actions/setup-node@v4
       with:
