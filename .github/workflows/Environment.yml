@@ -9,7 +9,9 @@ on:
 jobs:
  echo:
   runs-on: ubuntu-latest
+  environment: ${{inputs.target-env}}
   steps:
    - name: echo vars
      run: |
+      echo "Env variables is: ${{vars.TARGET_VAR}}"
      
