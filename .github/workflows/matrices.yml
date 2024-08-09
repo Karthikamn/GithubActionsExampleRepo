@@ -15,12 +15,12 @@ jobs:
      - ubuntu-latest
      - windows-latest
   steps:
-   - name: Setup node
-   - uses: actions/checkout@v4
-   - uses: action/setup-node@v4
-     with: ${{ matrix.node-version}}
-   - name: Perform test
-     run: echo "running test os and node version ${{matrix.os}} and ${{matrix.node-version}}"
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+       ${{ matrix.node-version}}
+    - name: Perform test
+      run: echo "running test os and node version ${{matrix.os}} and ${{matrix.node-version}}"
      
 
    
