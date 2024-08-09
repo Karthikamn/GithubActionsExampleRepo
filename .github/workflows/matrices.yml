@@ -14,12 +14,13 @@ jobs:
     os:
      - ubuntu-latest
      - windows-latest
+     - macos-latest
     include:
      - os: ubuntu-latest
        node-version: v16
     exclude:
       - os: macos-latest
-        node-version: v12
+        node-version: v22.6.0,v21.7.3
   steps:
     - uses: actions/setup-node@v4
       with:
