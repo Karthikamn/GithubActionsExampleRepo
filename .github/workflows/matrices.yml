@@ -6,7 +6,7 @@ on:
 
 jobs:
  backward_compatability:
-  name: ${{matrix.os}} - ${{matrix.node}}
+  name: ${{matrix.os}}-${{matrix.node}}
   runs-on: ${{matrix.os}}
   strategy:
    matrix: 
@@ -16,7 +16,7 @@ jobs:
      - windows-latest
     include:
      - os: ubuntu-latest
-     - node-version: v16.x
+     - node-version: v16
   steps:
     - uses: actions/setup-node@v4
       with:
