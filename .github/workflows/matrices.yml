@@ -16,7 +16,7 @@ jobs:
      - windows-latest
   steps:
    - name: Setup node
-     uses: action/setup-node@v3
+     uses: action/setup-node@v4
      with: ${{ matrix.node-version}}
    - name: Perform test
      run: echo "running test os and node version ${{matrix.os}} and ${{matrix.node-version}}"
