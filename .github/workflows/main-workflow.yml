@@ -5,7 +5,7 @@ on:
   branches: master
 jobs:
  use-reusable-workflow:
-  uses: ./.github/workflows/reusable.yml
+  uses: ./.github/workflows/reuasable.yml
   with:
    message: 'Hello from the main workflow'
    
