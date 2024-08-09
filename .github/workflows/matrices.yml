@@ -16,7 +16,7 @@ jobs:
      - windows-latest
     include:
      - os: ubuntu-latest
-     - node-version: v16
+       node-version: v16
   steps:
     - uses: actions/setup-node@v4
       with:
