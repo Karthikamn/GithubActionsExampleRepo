@@ -33,8 +33,7 @@ jobs:
       echo "Run number: ${{github.run_number}}"
    - name: Retreieve Variables
      
-     env:
-        MY_VAR: "step"
+    
        
      run:  |
       echo "Variables: ${{vars.MY_VAR}}"
